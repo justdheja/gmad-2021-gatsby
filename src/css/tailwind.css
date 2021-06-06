@@ -17,6 +17,35 @@ body {
   font-family: housttleySignature;
 }
 
+.timer-number {
+  font-size: 8rem;
+  line-height: 8rem;
+}
+
+.bg-timer-red {
+  background: url("../images/1lingkaranMerah.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-timer-orange {
+  background: url("../images/2lingkaranOrange.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-timer-yellow {
+  background: url("../images/3lingkaranKuning.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-timer-grey {
+  background: url("../images/4lingkaranGrey.png");
+  background-size: cover;
+  background-position: center;
+}
+
 .bg-header-home {
   background: url("../images/bg.png");
   background-size: cover;

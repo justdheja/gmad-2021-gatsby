@@ -6,7 +6,7 @@ import Events from '../components/Events'
 import Timer from '../components/Timer'
 
 export default () => {
-  let myDate = "26-05-2021"
+  let myDate = "26-08-2021"
   myDate = myDate.split("-")
   const time = new Date(myDate[2], myDate[1] - 1, myDate[0])
 
@@ -55,14 +55,14 @@ export default () => {
           <div className="w-full text-right">
             <img
               src={building}
-              className="App-logo mx-auto mb-8 w-10/12"
+              className="App-logo mx-auto my-auto w-10/12"
               alt="logo"
             />
           </div>
         </div>
       </div>
       <Events />
-      <Timer />
+      <Timer expiryTimestamp={time} />
     </Layout>
   )
 }
