@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+  font-family: housttleySignature;
+  src: url("./HousttelySignature.ttf");
+}
+
+.title-timer {
+  font-family: housttleySignature;
+}
+
+.bg-header-home {
+  background: url("../images/bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-timer {
+  background: url("../images/background_timer.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.header-horizontal {
+	border: 2px solid #fff;
+	width: 9rem;
+}
+
+.poppins {
+	font-family: 'Poppins', sans-serif;
+}
