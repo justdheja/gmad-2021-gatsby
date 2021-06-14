@@ -2,7 +2,7 @@ import { Link } from 'gatsby'
 import React from 'react'
 import logoGmad from '../images/logo.png'
 
-const Navbar = ({ location }) => {
+const Navbar = () => {
   return (
     <div>
       <div className="absolute w-screen z-50">
