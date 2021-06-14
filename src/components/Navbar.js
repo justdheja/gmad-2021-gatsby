@@ -3,7 +3,6 @@ import React from 'react'
 import logoGmad from '../images/logo.png'
 
 const Navbar = ({ location }) => {
-  console.log(window.location.pathname)
   return (
     <div>
       <div className="absolute w-screen z-50">
