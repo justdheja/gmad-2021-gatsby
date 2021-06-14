@@ -15,13 +15,14 @@ const Navbar = ({ location }) => {
                 </Link>
                 <div class="hidden md:block">
                   <div
-                    class={
-                      window.location.pathname === "/" ||
-                      window.location.pathname === "/a-talk" ||
-                      window.location.pathname === "/nao"
-                        ? "flex items-baseline space-x-6"
-                        : "flex items-baseline space-x-6 text-black"
-                    }
+                    // class={
+                    //   window.location.pathname === "/" ||
+                    //   window.location.pathname === "/a-talk" ||
+                    //   window.location.pathname === "/nao"
+                    //     ? "flex items-baseline space-x-6"
+                    //     : "flex items-baseline space-x-6 text-black"
+                    // }
+                    className="flex items-baseline space-x-6"
                   >
                     <Link
                       class=" py-2 px-2 rounded-md text-sm font-medium"
