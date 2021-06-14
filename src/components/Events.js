@@ -1,95 +1,70 @@
 import React from 'react';
 import Timer from './Timer';
-import { Slide } from 'react-reveal';
+import { Fade, Slide } from 'react-reveal';
 import { Link } from 'gatsby';
+import atalk from '../images/atalk_white.png'
+import nao from '../images/nao_white.png'
+import jnc from '../images/jnc_white.png'
+import fotoAtalk from '../images/fotoAtalk.png'
+import fotoNao from '../images/fotoNao.png'
+import fotoJnc from '../images/fotoJnc.png'
 
 function Events() {
-	let myDate = '26-05-2021';
-	myDate = myDate.split('-');
-	const time = new Date(myDate[2], myDate[1] - 1, myDate[0]);
+	
 	return (
-		<div className="events-container lg:flex justify-center items-center py-8 relative">
-			<div className="lg:flex justify-center items-center content-around min-h-96 w-full">
-				<Slide left>
-					<div className="w-72 mx-auto bg-white border-t-8 rounded dark:bg-gray-800 shadow-lg text-center p-4 m-4 jnc">
-						<div className="overflow-hidden">
-							<div className="text-2xl font-medium mb-8 text-gray-800 dark:text-white">
-								Logo JNC
-							</div>
-							<div className="leading-loose text-sm font-light text-gray-700 dark:text-gray-50 mb-10">
-								<div className="font-bold">JNC</div>
-								<div className="text-center mt-4">
-									Lorem ipsum dolor sit amet
-								</div>
-							</div>
-							<div className="px-4 mt-8 pb-8">
-								<Link to="/jnc">
-									<button
-										type="button"
-										className="py-2 px-4  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-full jnc-btn"
-									>
-										Selengkapnya
-									</button>
-								</Link>
-							</div>
-						</div>
-					</div>
-				</Slide>
+    <div className="container-event">
+      <div className=" md:flex h-full flex-col items-start justify-start items-center relative">
+        <Fade left>
+          <div className="flex p-0 w-full h-56 justify-center orange-text-container">
+            <div className="flex flex-col justify-center text-left px-8 w-4/6 h-full text-white ">
+              <Link to="/a-talk">
+                <img src={atalk} className="w-64 md:pl-4 mb-2" />
+              </Link>
+              Atalk is a national accounting seminar and talk show that is intended <br /> for students, business people, civil servant, and the general public
+            </div>
+            <img
+              src={fotoAtalk}
+              alt=""
+              className="h-full px-4"
+            />
+          </div>
+        </Fade>
 
-				<Slide bottom>
-					<div className="w-72 h-80 mx-auto bg-white border-t-8 rounded dark:bg-gray-800 shadow-lg text-center p-4 m-4 atalk">
-						<div className="overflow-hidden">
-							<div className="text-2xl font-medium mb-8 text-gray-800 dark:text-white">
-								Logo ATalk
-							</div>
-							<div className="leading-loose text-sm font-light text-gray-700 dark:text-gray-50 mb-10">
-								<div className="font-bold">ATalk</div>
-								<div className="text-center mt-4">
-									Lorem ipsum dolor sit amet
-								</div>
-							</div>
-							<div className="px-4 mt-8 pb-8">
-								<Link to="/atalk">
-									<button
-										type="button"
-										className="py-2 px-4  bg-indigo-600 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none  rounded-full atalk-btn"
-									>
-										Selengkapnya
-									</button>
-								</Link>
-							</div>
-						</div>
-					</div>
-				</Slide>
+        <Fade right>
+          <div className="flex p-0 w-full h-56 justify-center pink-text-container">
+            <img
+              src={fotoNao}
+              alt=""
+              className="h-full px-4"
+            />
+            <div className="flex flex-col justify-center items-end text-right px-8 w-4/6 h-full text-white ">
+              <Link to="/nao">
+                <img src={nao} className="w-64 md:pl-4 mb-2" />
+              </Link>
+              NAO is one of the biggest and most prestigious <br />
+              accounting competition for undergraduates in Indonesia
+            </div>
+          </div>
+        </Fade>
 
-				<Slide right>
-					<div className="w-72 mx-auto bg-white border-t-8 rounded dark:bg-gray-800 shadow-lg text-center p-4 m-4 nao">
-						<div className="overflow-hidden">
-							<div className="text-2xl font-medium mb-8 text-gray-800 dark:text-white">
-								Logo NAO
-							</div>
-							<div className="leading-loose text-sm font-light text-gray-700 dark:text-gray-50 mb-10">
-								<div className="font-bold">NAO</div>
-								<div className="text-center mt-4">
-									Lorem ipsum dolor sit amet
-								</div>
-							</div>
-							<div className="px-4 mt-8 pb-8">
-								<Link to="/nao">
-									<button
-										type="button"
-										className="py-2 px-4  nao-btn  text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none rounded-full "
-									>
-										Selengkapnya
-									</button>
-								</Link>
-							</div>
-						</div>
-					</div>
-				</Slide>
-			</div>
-		</div>
-	);
+        <Fade left>
+          <div className="flex p-0 w-full h-56 green-text-container justify-center">
+            <div className="flex flex-col justify-center text-left px-8 w-4/6 h-full text-white ">
+              <Link to="/jnc">
+                <img src={jnc} className="w-64 md:pl-4 mb-2" />
+              </Link>
+              JNC is the event expansion in GMAD, that encompasses the aim <br /> to create an inclusive in paper research concept
+            </div>
+            <img
+              src={fotoJnc}
+              alt=""
+              className="h-full px-4"
+            />
+          </div>
+        </Fade>
+      </div>
+    </div>
+  )
 }
 
 export default Events;

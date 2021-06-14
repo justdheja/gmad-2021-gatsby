@@ -4,6 +4,7 @@ import heroImage from "../images/hero-image.svg"
 import building from "../images/building.png"
 import Events from '../components/Events'
 import Timer from '../components/Timer'
+import { Fade, Slide } from 'react-reveal'
 
 export default () => {
   let myDate = "26-08-2021"
@@ -39,30 +40,34 @@ export default () => {
           //     : {}
           // }
         >
-          <div className="flex justify-center align-middle flex-col px-5 text-white">
-            <h1 className="header-title text-4xl mb-2 poppins">
-              Gadjah Mada <br />
-              Accounting Days <br />
-              2021
-            </h1>
-            <hr className="header-horizontal mb-6" />
-            <p className="text-justify mb-5 pr-4">
-              The biggest annual event of the Department of Accounting, Faculty
-              of Economics and Business, Gadjah Mada University (FEB UGM)
-              organized by Ikatan Mahasiswa Akuntansi Gadjah Mada (IMAGAMA).
-            </p>
-          </div>
-          <div className="w-full text-right">
-            <img
-              src={building}
-              className="App-logo mx-auto my-auto w-10/12"
-              alt="logo"
-            />
-          </div>
+          <Fade left>
+            <div className="flex justify-center align-middle flex-col px-5 text-white">
+              <h1 className="header-title text-4xl mb-2 poppins">
+                Gadjah Mada <br />
+                Accounting Days <br />
+                2021
+              </h1>
+              <hr className="header-horizontal mb-6" />
+              <p className="text-justify mb-5 pr-4">
+                The biggest annual event of the Department of Accounting, Faculty
+                of Economics and Business, Gadjah Mada University (FEB UGM)
+                organized by Ikatan Mahasiswa Akuntansi Gadjah Mada (IMAGAMA).
+              </p>
+            </div>
+          </Fade>
+          <Fade right>
+            <div className="w-full text-right">
+              <img
+                src={building}
+                className="App-logo mx-auto my-auto w-10/12"
+                alt="logo"
+              />
+            </div>
+          </Fade>
         </div>
       </div>
       <Events />
-      <Timer expiryTimestamp={time} />
+      <Timer />
     </Layout>
   )
 }

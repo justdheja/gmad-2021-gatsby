@@ -1,31 +1,39 @@
 import React from 'react'
+import { Fade } from 'react-reveal'
 import Layout from '../components/Layout'
+import jncLogo from '../images/logoJncEvent.png'
+import timelineJnc from '../images/timelineJnc.png'
 
 const jnc = () => {
   return (
     <Layout>
-      <main className="max-w-4xl flex-grow mx-auto flex flex-col justify-around">
-        <div className="sm:flex sm:flex-row-reverse sm:items-center">
-          <div className="sm:px-2">
-            <h1 className="px-4 pt-5 text-2xl text-left text-teal-500 font-bold sm:text-3xl">
-              Gatsby Starter Tailwind CSS
-            </h1>
-            <p className="px-4 mt-8 text-lg text-gray-700 sm:mt-8">
-              Start your Gatsby and Tailwind CSS project easily with this Gatsby
-              Starter
+      <div className="min-h-screen container-desc-jnc p-16 flex flex-col space-y-24 items-center justify-center">
+          <Fade right>
+            <img src={jncLogo} alt="logo jnc" className="mx-auto h-56" />
+          </Fade>
+          <Fade left>
+            <p className="mt-8 text-justify md:px-64">
+              <mark className="bg-palette-teal text-white p-1">
+                Jogjakarta National Conference (JNC)
+              </mark>{" "}
+              is the event expansion of Gadjah Mada Accounting days, that
+              encompasses the aim to create an inclusive competition in paper
+              research concept. JNC 2021 provides its participants with one grand
+              theme and two sub themes that enhances and accommodates the process of
+              critical thinking and solution making in form of paper competition.
+              The selected participant will attend the conference for paper
+              presentation and final rounds. The competition aims to provide a
+              memorable experience, with positive feedback that builds relation and
+              substantial discussion.
             </p>
-          </div>
-        </div>
-
-        <div className="mx-auto">
-          <a
-            href="https://github.com/melanienolan/gatsby-starter-tailwind-css"
-            className="p-4 bg-teal-500 text-white text-xs rounded shadow hover:bg-teal-400"
-          >
-            View on GitHub
-          </a>
-        </div>
-      </main>
+          </Fade>
+      </div>
+      
+      <div className="min-h-screen">
+        <Fade bottom>
+          <img src={timelineJnc} alt="timeline" className="w-full"/>
+        </Fade>
+      </div>
     </Layout>
   )
 }

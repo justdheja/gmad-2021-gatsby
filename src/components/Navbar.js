@@ -2,7 +2,8 @@ import { Link } from 'gatsby'
 import React from 'react'
 import logoGmad from '../images/logo.png'
 
-const Navbar = () => {
+const Navbar = ({ location }) => {
+  console.log(window.location.pathname)
   return (
     <div>
       <div className="absolute w-screen z-50">
@@ -14,7 +15,15 @@ const Navbar = () => {
                   <img class="h-20" src={logoGmad} alt="GMAD 2021" />
                 </Link>
                 <div class="hidden md:block">
-                  <div class="flex items-baseline space-x-6">
+                  <div
+                    class={
+                      window.location.pathname === "/" ||
+                      window.location.pathname === "/a-talk" ||
+                      window.location.pathname === "/nao"
+                        ? "flex items-baseline space-x-6"
+                        : "flex items-baseline space-x-6 text-black"
+                    }
+                  >
                     <Link
                       class=" py-2 px-2 rounded-md text-sm font-medium"
                       activeClassName="px-2  bg-yellow-500 text-sm text-white transition ease-in duration-200 text-center text-base  shadow-md rounded-full"
@@ -43,7 +52,7 @@ const Navbar = () => {
                     >
                       A-TALK
                     </Link>
-                    <div class=" py-2 px-2 rounded-md text-sm font-medium">
+                    {/* <div class=" py-2 px-2 rounded-md text-sm font-medium">
                       |
                     </div>
                     <Link
@@ -52,7 +61,7 @@ const Navbar = () => {
                       to="/contact"
                     >
                       Contact
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>

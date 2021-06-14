@@ -17,6 +17,41 @@ body {
   font-family: housttleySignature;
 }
 
+.container-event {
+  background-image: url("../images/bacground_event.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.orange-text-container {
+  background-image: url("../images/orange_line_event.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.pink-text-container {
+  background-image: url("../images/pink_line_event.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.green-text-container {
+  background-image: url("../images/green_line_event.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.container-desc-jnc {
+  background-image: url("../images/bacgroundDescJnc.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-palette-teal {
+  background-color: #3d50a0;
+}
+
 .timer-number {
   font-size: 8rem;
   line-height: 8rem;
