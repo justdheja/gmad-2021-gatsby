@@ -1,10 +1,10 @@
 import { Link } from 'gatsby'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import useSiteMetadata from '../hooks/useSiteMetadata'
 import logoGmad from '../images/logo.png'
 
 const Navbar = ({ location }) => {
-  const { url } = useSiteMetadata()
+  const [url, setUrl] = useState(window.location.pathname)
 
   return (
     <div>
@@ -25,38 +25,37 @@ const Navbar = ({ location }) => {
                 </Link>
                 <div class="hidden md:block">
                   <div
-                    // class={
-                    //   window.location.pathname === "/" ||
-                    //   window.location.pathname === "/a-talk"
-                    //     ? "flex items-baseline space-x-6"
-                    //     : "flex items-baseline space-x-6 text-gray-400"
-                    // }
-                    className="flex items-baseline space-x-6"
+                    className={
+                      url === "/" ||
+                      url === "/contact"
+                        ? "flex items-baseline space-x-6"
+                        : "flex items-baseline space-x-6 text-gray-800"
+                    }
                   >
                     <Link
                       class=" py-2 px-2 rounded-md text-sm font-medium"
-                      activeClassName="px-2  bg-yellow-500 text-sm text-white transition ease-in duration-200 text-center text-base  shadow-md rounded-full"
+                      activeClassName="px-2  bg-palette-orange text-sm text-white transition ease-in duration-200 text-center text-base  shadow-md rounded-full"
                       to="/"
                     >
                       Home
                     </Link>
                     <Link
                       class=" py-2 px-2 rounded-md text-sm font-medium"
-                      activeClassName="px-2  bg-yellow-400 text-sm text-white transition ease-in duration-200 text-center text-base  shadow-md rounded-full"
+                      activeClassName="px-2  bg-palette-orange text-sm text-white transition ease-in duration-200 text-center text-base  shadow-md rounded-full"
                       to="/jnc"
                     >
                       JNC
                     </Link>
                     <Link
                       class=" py-2 px-2 rounded-md text-sm font-medium"
-                      activeClassName="px-2  bg-yellow-400 text-sm text-white transition ease-in duration-200 text-center text-base  shadow-md rounded-full"
+                      activeClassName="px-2  bg-palette-orange text-sm text-white transition ease-in duration-200 text-center text-base  shadow-md rounded-full"
                       to="/nao"
                     >
                       NAO
                     </Link>
                     <Link
                       class=" py-2 mx-2 rounded-md text-sm font-medium"
-                      activeClassName="px-2  bg-yellow-400 text-sm text-white transition ease-in duration-200 text-center text-base  shadow-md rounded-full"
+                      activeClassName="px-2  bg-palette-orange text-sm text-white transition ease-in duration-200 text-center text-base  shadow-md rounded-full"
                       to="/a-talk"
                     >
                       A-TALK
@@ -66,7 +65,7 @@ const Navbar = ({ location }) => {
                     </div>
                     <Link
                       class="  hover: dark:hover:text-white mx-8 py-2 rounded-md text-sm font-medium"
-                      activeClassName="px-2  bg-yellow-400 text-sm text-white transition ease-in duration-200 text-center text-base  shadow-md rounded-full"
+                      activeClassName="px-2  bg-palette-orange text-sm text-white transition ease-in duration-200 text-center text-base  shadow-md rounded-full"
                       to="/contact"
                     >
                       Contact
