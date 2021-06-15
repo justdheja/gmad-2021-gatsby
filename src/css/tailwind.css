@@ -54,12 +54,22 @@ body {
   background-position: center;
 }
 
+.container-desc-atalk {
+  background-image: url("../images/backgroundDescAtalk.png");
+  background-size: cover;
+  background-position: center;
+}
+
 .bg-palette-teal {
   background-color: #3d50a0;
 }
 
 .bg-palette-blue {
   background-color: #111d5e;
+}
+
+.bg-palette-orange {
+  background-color: #f37121;
 }
 
 .timer-number {

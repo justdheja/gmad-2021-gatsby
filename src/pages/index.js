@@ -70,7 +70,7 @@ export default () => {
                 to="event"
                 spy={true}
                 smooth={true}
-                className="p-2 mx-auto md:ml-0 cursor-pointer bg-yellow-500 hover:bg-yellow-400 focus:ring-yellow-500 focus:ring-offset-yellow-200 focus:ring-2 focus:ring-offset-2 text-sm text-white transition ease-in duration-200 text-center text-base w-9/12 md:w-4/12 shadow-md rounded-full"
+                className="p-2 mx-auto md:ml-0 cursor-pointer bg-palette-orange hover:bg-yellow-600 focus:ring-yellow-500 focus:ring-offset-yellow-200 focus:ring-2 focus:ring-offset-2 text-sm text-white transition ease-in duration-200 text-center text-base w-9/12 md:w-4/12 shadow-md rounded-full"
                 activeClassName=""
               >
                 Learn More
