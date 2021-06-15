@@ -1,15 +1,24 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import Layout from "../components/Layout"
 import heroImage from "../images/hero-image.svg"
 import building from "../images/building.png"
 import Events from '../components/Events'
+import EventsMobile from '../components/EventsMobile'
 import Timer from '../components/Timer'
-import { Fade, Slide } from 'react-reveal'
+import { Fade } from 'react-reveal'
 
 export default () => {
-  let myDate = "26-08-2021"
-  myDate = myDate.split("-")
-  const time = new Date(myDate[2], myDate[1] - 1, myDate[0])
+  const [width, setWidth] = useState(0)
+
+  useEffect(() => {
+    setWidth(window.innerWidth)
+    window.addEventListener("resize", () => {
+      setWidth(window.innerWidth)
+    })
+    return () => {
+      window.removeEventListener("resize", () => {})
+    }
+  }, [])
 
   return (
     <Layout>
@@ -66,7 +75,10 @@ export default () => {
           </Fade>
         </div>
       </div>
-      <Events />
+      {width <= 780 ? 
+        <EventsMobile /> :
+        <Events />
+      }
       <Timer />
     </Layout>
   )

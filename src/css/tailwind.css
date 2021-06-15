@@ -48,8 +48,18 @@ body {
   background-position: center;
 }
 
+.container-desc-nao {
+  background-image: url("../images/bacgroundDescNao.png");
+  background-size: cover;
+  background-position: center;
+}
+
 .bg-palette-teal {
   background-color: #3d50a0;
+}
+
+.bg-palette-blue {
+  background-color: #111d5e;
 }
 
 .timer-number {

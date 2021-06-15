@@ -9,10 +9,10 @@ const jnc = () => {
     <Layout>
       <div className="min-h-screen container-desc-jnc p-16 flex flex-col space-y-24 items-center justify-center">
           <Fade right>
-            <img src={jncLogo} alt="logo jnc" className="mx-auto h-56" />
+            <img src={jncLogo} alt="logo jnc" className="mx-auto md:h-56" />
           </Fade>
           <Fade left>
-            <p className="mt-8 text-justify md:px-64">
+            <p className="mt-8 text-justify lg:px-64">
               <mark className="bg-palette-teal text-white p-1">
                 Jogjakarta National Conference (JNC)
               </mark>{" "}
@@ -29,7 +29,7 @@ const jnc = () => {
           </Fade>
       </div>
       
-      <div className="min-h-screen">
+      <div className="lg:min-h-screen">
         <Fade bottom>
           <img src={timelineJnc} alt="timeline" className="w-full"/>
         </Fade>

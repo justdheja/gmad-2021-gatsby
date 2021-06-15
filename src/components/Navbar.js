@@ -1,12 +1,22 @@
 import { Link } from 'gatsby'
-import React from 'react'
+import React, { useEffect } from 'react'
+import useSiteMetadata from '../hooks/useSiteMetadata'
 import logoGmad from '../images/logo.png'
 
-const Navbar = () => {
+const Navbar = ({ location }) => {
+  const { url } = useSiteMetadata()
+
   return (
     <div>
       <div className="absolute w-screen z-50">
-        <nav class="transition ease-in duration-200">
+        <nav
+          // className={
+          //   window.location.pathname === "/nao" ||
+          //   window.location.pathname === "/jnc"
+          //     ? "transition ease-in duration-200 bg-palette-blue"
+          //     : "transition ease-in duration-200"
+          // }
+        >
           <div class="max-w-7xl mx-auto px-8">
             <div class="flex items-center justify-between h-16">
               <div class="w-full justify-between flex items-center text-white">
@@ -17,10 +27,9 @@ const Navbar = () => {
                   <div
                     // class={
                     //   window.location.pathname === "/" ||
-                    //   window.location.pathname === "/a-talk" ||
-                    //   window.location.pathname === "/nao"
+                    //   window.location.pathname === "/a-talk"
                     //     ? "flex items-baseline space-x-6"
-                    //     : "flex items-baseline space-x-6 text-black"
+                    //     : "flex items-baseline space-x-6 text-gray-400"
                     // }
                     className="flex items-baseline space-x-6"
                   >
