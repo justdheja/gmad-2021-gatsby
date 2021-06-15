@@ -4,7 +4,17 @@ import useSiteMetadata from '../hooks/useSiteMetadata'
 import logoGmad from '../images/logo.png'
 
 const Navbar = ({ location }) => {
-  const [url, setUrl] = useState(window.location.pathname)
+  const [url, setUrl] = useState("")
+
+  useEffect(() => {
+    setUrl(window.location.pathname)
+    window.addEventListener("popstate", () => {
+      setUrl(window.location.pathname)
+    })
+    return () => {
+      window.addEventListener("popstate", () => {})
+    }
+  }, [])
 
   return (
     <div>
