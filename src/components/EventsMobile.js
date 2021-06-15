@@ -15,9 +15,9 @@ function EventsMobile() {
       <div className="">
         <Fade left>
           <div className="p-0 w-full py-4">
-            <div className="justify-center text-justify px-8 w-4/6 h-full text-white ">
+            <div className="justify-center text-justify px-8 h-full text-white ">
               <Link to="/a-talk">
-                <img src={atalk} className="w-64 md:pl-4 mb-2" />
+                <img src={atalk} className="w-64 md:pl-4 mb-2 mx-auto" />
               </Link>
               Atalk is a national accounting seminar and talk show that is
               intended for students, business people, civil servant, and
@@ -29,9 +29,9 @@ function EventsMobile() {
 
         <Fade right>
           <div className="w-full py-4">
-            <div className=" px-8 w-4/6 h-full text-justify text-white ">
+            <div className=" px-8 h-full text-justify text-white ">
               <Link to="/nao">
-                <img src={nao} className="w-64 md:pl-4 mb-2" />
+                <img src={nao} className="w-64 md:pl-4 mb-2 mx-auto" />
               </Link>
               NAO is one of the biggest and most prestigious accounting competition for undergraduates in Indonesia
             </div>
@@ -41,9 +41,9 @@ function EventsMobile() {
 
         <Fade left>
           <div className="py-4 w-full justify-center">
-            <div className="flex-col justify-center text-justify px-8 w-4/6 h-full text-white ">
+            <div className="flex-col justify-center text-justify px-8 h-full text-white ">
               <Link to="/jnc">
-                <img src={jnc} className="w-64 md:pl-4 mb-2" />
+                <img src={jnc} className="w-64 md:pl-4 mb-2 mx-auto" />
               </Link>
               JNC is the event expansion in GMAD, that encompasses the aim  to create an inclusive in paper research concept
             </div>

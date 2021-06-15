@@ -14,17 +14,9 @@ const nao = () => {
         <Fade left>
           <p className="mt-8 text-justify lg:px-64">
             <mark className="bg-palette-blue text-white p-1">
-              Jogjakarta National Conference (JNC)
+              National Accounting Olympiad (NAO)
             </mark>{" "}
-            is the event expansion of Gadjah Mada Accounting days, that
-            encompasses the aim to create an inclusive competition in paper
-            research concept. JNC 2021 provides its participants with one grand
-            theme and two sub themes that enhances and accommodates the process
-            of critical thinking and solution making in form of paper
-            competition. The selected participant will attend the conference for
-            paper presentation and final rounds. The competition aims to provide
-            a memorable experience, with positive feedback that builds relation
-            and substantial discussion.
+            is the one of the biggest and most prestigous accounting competition for undergraduates in Indonesia - an event we are proud to call ours. With our tagline of "Olympiad Can Be Fun", NAO will be packaged with fun yet challenging games, a concept designed not only to test the participants' accounting skill but also to motivate everyone involved to have fun and enjoy themselves along the process, as a part of Gadjah Mada Accounting Days' Sequence, NAO consist of three phases of preliminaries, semifinals, and final. By bringing the theme of the business sustainability in the long run, hopefully the students are encouraged to give solutions to relevant accounting issues through study cases.
           </p>
         </Fade>
       </div>

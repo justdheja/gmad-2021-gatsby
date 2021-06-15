@@ -7,7 +7,8 @@ module.exports = {
   siteMetadata: {
     title: "GMAD 2021",
     author: "GMAD 2021",
-    description: "GMAD 2021 ",
+    description:
+      "GMAD 2021 The biggest annual event of the Department of Accounting, Faculty of Economics and Business, Gadjah Mada University (FEB UGM) organized by Ikatan Mahasiswa Akuntansi Gadjah Mada (IMAGAMA).",
     url: "gmadugm.com/",
     image: "",
   },
