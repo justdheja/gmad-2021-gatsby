@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import { Fade } from "react-reveal"
 import Layout from "../components/Layout"
 import naoLogo from "../images/logoNaoEvent.png"
-import TimelineNao from '../components/TImelineNao'
+import TimelineNao from '../components/TimelineNao'
 
 const Nao = () => {
   const [width, setWidth] = useState(0)
