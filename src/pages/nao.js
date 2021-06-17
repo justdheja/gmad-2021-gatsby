@@ -64,7 +64,9 @@ const Nao = () => {
                 Timeline
               </mark>
             </h2>
-            <TimelineNao />
+            <Fade left>
+              <TimelineNao />
+            </Fade>
           </div>
         )}
 
