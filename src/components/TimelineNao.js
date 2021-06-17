@@ -28,9 +28,9 @@ const TimelineNao = () => {
               Registration
             </h4>
             <p className="text-white">
-              August
+              July 1st -
               <br />
-              1st-20th, 2021
+              August 14th, 2021
             </p>
           </div>
         </li>
