@@ -19,12 +19,12 @@ const Navbar = ({ location }) => {
     <div>
       <div className="absolute w-screen z-50">
         <nav
-          // className={
-          //   window.location.pathname === "/nao" ||
-          //   window.location.pathname === "/jnc"
-          //     ? "transition ease-in duration-200 bg-palette-blue"
-          //     : "transition ease-in duration-200"
-          // }
+        // className={
+        //   window.location.pathname === "/nao" ||
+        //   window.location.pathname === "/jnc"
+        //     ? "transition ease-in duration-200 bg-palette-blue"
+        //     : "transition ease-in duration-200"
+        // }
         >
           <div class="max-w-7xl mx-auto px-8">
             <div class="flex items-center justify-between h-16">
@@ -35,10 +35,9 @@ const Navbar = ({ location }) => {
                 <div class="hidden md:block">
                   <div
                     className={
-                      url === "/" ||
-                      url === "/contact"
-                        ? "flex items-baseline space-x-6"
-                        : "flex items-baseline space-x-6 text-gray-800"
+                      url === "/nao" || url === "/jnc" || url === "/a-talk"
+                        ? "flex items-baseline space-x-6 text-gray-800"
+                        : "flex items-baseline space-x-6"
                     }
                   >
                     <Link

@@ -2,7 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import useSiteMetadata from "../hooks/useSiteMetadata"
 
-const SEO = () => {
+const SEO = ({ page }) => {
   const { title, description } = useSiteMetadata()
 
   return (
@@ -13,7 +13,7 @@ const SEO = () => {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
-      <title>{title}</title>
+      <title>{page ? (title + " | " + page) : title}</title>
     </Helmet>
   )
 }

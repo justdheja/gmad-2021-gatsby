@@ -4,7 +4,7 @@ import Navbar from "./Navbar"
 import Footer from './Footer'
 import Loader from './Loader'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, page }) => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <SEO />
+      <SEO page={page} />
       <div className="flex flex-col min-h-screen static ">
         <Navbar />
         {loading && <Loader />}
