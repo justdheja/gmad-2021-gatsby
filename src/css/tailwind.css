@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins&display=swap');
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -52,6 +52,39 @@ body {
   background-image: url("../images/bacgroundDescNao.png");
   background-size: cover;
   background-position: center;
+}
+
+.container-event-nao {
+  background-image: url("../images/bacgroundEventNao.png");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.title-effect-nao {
+  text-shadow: 0px 0px 15px #d61656;
+}
+
+.shadow-effect-nao {
+  -webkit-box-shadow: 10px 10px 21px -8px rgba(0,0,0,1);
+  -moz-box-shadow: 10px 10px 21px -8px rgba(0,0,0,1);
+  box-shadow: 10px 10px 21px -8px rgba(0,0,0,1), inset 5px 5px 5px 0px rgba(255,255,255,0.2);
+
+}
+
+.bg-palette-pink {
+  background: #d61656;
+}
+
+.text-palette-pink {
+  color: #d61656;
+}
+
+.text-palette-dusty {
+  color: #f9538b;
+}
+
+.bg-palette-dusty {
+  background: #f9538b;
 }
 
 .container-desc-atalk {
@@ -120,4 +153,84 @@ body {
 
 .poppins {
 	font-family: 'Poppins', sans-serif;
+}
+/* TImelineNao */
+.timeline {
+  list-style-type: none;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.li {
+  transition: all 200ms ease-in;
+}
+
+.timestamp {
+  margin-bottom: 20px;
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 100;
+}
+
+.status {
+  padding: 0px 20px;
+  /* display: flex; */
+  justify-content: center;
+  border-top: 2px solid #D6DCE0;
+  position: relative;
+  transition: all 200ms ease-in;
+}
+
+.status h4 {
+  font-weight: 600;
+}
+.status:before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  position: absolute;
+  top: -15px;
+  left: 42%;
+  transition: all 200ms ease-in;
+}
+
+.li.complete .status {
+  border-top: 4px solid #f9538b;
+}
+.li.complete .status:before {
+  background-color: #f9538b;
+  border: none;
+  transition: all 200ms ease-in;
+}
+.li.complete .status h4 {
+  color: #f9538b;
+}
+
+@media (min-device-width: 320px) and (max-device-width: 700px) {
+  .timeline {
+    list-style-type: none;
+    display: block;
+  }
+
+  .li {
+    transition: all 200ms ease-in;
+    display: flex;
+    width: inherit;
+  }
+
+  .timestamp {
+    width: 100px;
+  }
+
+  .status:before {
+    left: -8%;
+    top: 30%;
+    transition: all 200ms ease-in;
+  }
 }

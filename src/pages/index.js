@@ -17,7 +17,6 @@ export default () => {
     window.addEventListener("resize", () => {
       setWidth(window.innerWidth)
     })
-    console.log(width)
     return () => {
       window.removeEventListener("resize", () => {})
     }

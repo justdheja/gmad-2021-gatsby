@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 import jncLogo from '../images/logoJncEvent.png'
 import timelineJnc from '../images/timelineJnc.png'
 
-const jnc = () => {
+const Jnc = () => {
   return (
     <Layout>
       <div className="min-h-screen container-desc-jnc p-16 flex flex-col space-y-24 items-center justify-center">
@@ -38,4 +38,4 @@ const jnc = () => {
   )
 }
 
-export default jnc
+export default Jnc
