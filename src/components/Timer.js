@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Fade } from 'react-reveal';
-import { useTimer } from 'react-timer-hook';
 import atalkWhite from '../images/atalk_white.png';
 
 function Timer({ expiryTimestamp }) {
@@ -17,10 +16,10 @@ function Timer({ expiryTimestamp }) {
 	// });
 
   
-  let countDownDate = new Date("Sep 5, 2021 15:37:25").getTime()
-
+  
   useEffect(() => {
     const timer = setInterval(() => {
+      let countDownDate = new Date("Sep 5, 2021 15:37:25").getTime()
       let now = new Date().getTime()
 
       // Find the distance between now and the count down date

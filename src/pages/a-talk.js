@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/Layout"
-import Timer from '../components/Timer'
 import { Fade } from 'react-reveal'
 import atalkLogo from '../images/logoAtalkEvent.png'
 
@@ -21,6 +20,8 @@ const atalk = () => {
           </p>
         </Fade>
       </div>
+
+
     </Layout>
   )
 }
