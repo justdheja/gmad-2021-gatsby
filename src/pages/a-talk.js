@@ -3,7 +3,7 @@ import Layout from "../components/Layout"
 import { Fade } from 'react-reveal'
 import atalkLogo from '../images/logoAtalkEvent.png'
 
-const atalk = () => {
+const Atalk = () => {
 
   return (
     <Layout>
@@ -26,4 +26,4 @@ const atalk = () => {
   )
 }
 
-export default atalk
+export default Atalk

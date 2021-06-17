@@ -1,6 +1,5 @@
 import { Link } from 'gatsby'
 import React, { useEffect, useState } from 'react'
-import useSiteMetadata from '../hooks/useSiteMetadata'
 import logoGmad from '../images/logo.png'
 
 const Navbar = ({ location }) => {

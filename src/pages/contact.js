@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 
-const contacts = () => {
+const Contacts = () => {
   return (
     <Layout>
       <main className="max-w-4xl flex-grow mx-auto flex flex-col justify-around">
@@ -30,4 +30,4 @@ const contacts = () => {
   )
 }
 
-export default contacts
+export default Contacts

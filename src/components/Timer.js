@@ -18,7 +18,7 @@ function Timer({ expiryTimestamp }) {
   
   
   useEffect(() => {
-    const timer = setInterval(() => {
+    setInterval(() => {
       let countDownDate = new Date("Sep 5, 2021 15:37:25").getTime()
       let now = new Date().getTime()
 

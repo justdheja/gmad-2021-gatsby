@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react"
 import SEO from "./SEO"
 import Navbar from "./Navbar"
-import { Fade } from "react-reveal"
 import Footer from './Footer'
 import Loader from './Loader'
 
@@ -13,6 +12,7 @@ const Layout = ({ children }) => {
       setTimeout(() => setLoading(false), 1000)
     }
   }, [])
+
   return (
     <>
       <SEO />
