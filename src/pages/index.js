@@ -23,7 +23,7 @@ export default () => {
   }, [])
 
   return (
-    <Layout>
+    <Layout page="Home">
       <div className="w-screen min-h-screen bg-header-home flex-grow mx-auto flex flex-col justify-around pt-20">
         {/* <div className="sm:flex sm:flex-row-reverse sm:items-center">
           <div className="sm:px-2">
