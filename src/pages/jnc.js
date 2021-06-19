@@ -34,6 +34,83 @@ const Jnc = () => {
           <img src={timelineJnc} alt="timeline" className="w-full" />
         </Fade>
       </div>
+
+      <div className="min-h-screen container-theme-slide1-jnc flex flex-col justify-center items-center space-y-8">
+        <Fade right>
+          <div className="text-center w-full">
+            <h1 className="text-6xl text-white font-extrabold text-theme-jnc">
+              Grand Theme
+            </h1>
+            <h2 className="text-2xl text-white font-extrabold">
+              Companies vs Crises: A Call for Rapid Responsible Transformation
+            </h2>
+          </div>
+          <div className="flex flex-col space-y-2 lg:space-y-0 lg:flex-row lg:space-x-8 p-8 lg:px-12 text-white text-xl">
+            <div className="text-justify">
+              When crises occur, it is always the business industry taking the
+              biggest hit, with medium and smaller enterprises foremostly placed
+              at the risk of circling the drain. However, even the darkest cloud
+              has a silver lining. Experiencing financial crises might have
+              taken a huge toll on many businesses, but it yielded a valuable
+              lesson: companies must always prepare themselves for the upcoming
+              “worst scenarios”.
+            </div>
+            <div className="text-justify">
+              Therefore, being aware of the importance of transformation on
+              existing industry structure, we proudly present to you the
+              Jogjakarta National Conference (JNC) 2021 as a platform for the
+              delegates to be able to engage and indulge themselves in profound
+              and in-depth research, and be able to dissect and further
+              elaborate the novel discoveries and innovative ideas proposed.
+            </div>
+          </div>
+        </Fade>
+      </div>
+
+      <div className="min-h-screen container-theme-slide2-jnc flex flex-col lg:flex-row justify-center items-start p-8 lg:pt-32 space-y-8 lg:space-y-0 lg:space-x-8">
+        <Fade left>
+          <div className="flex flex-col">
+            <h2 className="text-4xl uppercase font-extrabold text-palette-blue">
+              Subtheme 1
+            </h2>
+            <h2 className="text-2xl font-extrabold text-palette-blue">
+              Optimizing Financial Service through Improved Technology and
+              Reporting Advances
+            </h2>
+            <p className="text-justify mt-2">
+              From small, local family businesses to large, international
+              corporations, financial reporting is a compulsory process that
+              each of every legal entity has to carry out. Responding to the
+              current challenge of economic uncertainty, in the status quo, the
+              methods of financial reporting as the demand for an optimized,
+              quick, and accurate report is escalating, while retaining the
+              quality and utility of the report is also urgent. Realizing the
+              status quo, is this a matter of innovation, utility, or balance of
+              compliance?
+            </p>
+          </div>
+        </Fade>
+        <Fade right>
+          <div className="flex flex-col pt">
+            <h2 className="text-4xl uppercase font-extrabold text-palette-blue">
+              Subtheme 2
+            </h2>
+            <h2 className="text-2xl font-extrabold text-palette-blue">
+              Revitalizing Tax System in the Digital Economy Environment
+            </h2>
+            <p className="text-justify mt-2">
+              In order not to be outrun by the changes brought by the digital
+              economy, the tax regulation in the digital economy should be one
+              of the major economic considerations within a country. The risk of
+              tax avoidance is getting more pronounced as conventional tax
+              systems highly rely on the physical appearance of tax substances
+              which could not capture the value creation and profit-making.
+              Realizing the matter, how to transform a tax system that is
+              adequate to the digital economy?
+            </p>
+          </div>
+        </Fade>
+      </div>
     </Layout>
   )
 }

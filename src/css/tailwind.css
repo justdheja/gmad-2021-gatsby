@@ -48,6 +48,18 @@ body {
   background-position: center;
 }
 
+.container-theme-slide1-jnc {
+  background-image: url("../images/backgroundThemeSlide1Jnc.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.container-theme-slide2-jnc {
+  background-image: url("../images/backgroundThemeSlide2Jnc.png");
+  background-size: cover;
+  background-position: center;
+}
+
 .container-desc-nao {
   background-image: url("../images/bacgroundDescNao.png");
   background-size: cover;
@@ -71,12 +83,20 @@ body {
 
 }
 
+.text-theme-jnc {
+  text-shadow: 0px 5px 5px #000;
+}
+
 .bg-palette-pink {
   background: #d61656;
 }
 
 .text-palette-pink {
   color: #d61656;
+}
+
+.text-palette-blue {
+  color: #111d5e;
 }
 
 .text-palette-dusty {
