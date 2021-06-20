@@ -81,6 +81,7 @@ const Nao = () => {
               href="https://drive.google.com/drive/folders/1QQNa7ZMMXlUby9yq9Cs2iHoofJCaO2YP?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
+              className="w-full"
             >
               <button className="p-2 md:ml-0 font-semibold cursor-pointer bg-palette-pink hover:bg-palette-dusty shadow-effect-nao text-sm text-white transition ease-in duration-200 text-center text-base w-6/12 shadow-lg rounded-full">
                 Download Booklet
