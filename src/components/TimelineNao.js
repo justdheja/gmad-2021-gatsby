@@ -49,7 +49,7 @@ const TimelineNao = () => {
           <div class="timestamp"></div>
           <div class="status mx-auto">
             <h4 className="mt-4">
-              Top 35
+              Top 25
               <br />
               Announcement
             </h4>
