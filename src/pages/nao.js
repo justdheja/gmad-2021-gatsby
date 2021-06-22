@@ -78,15 +78,12 @@ const Nao = () => {
               </mark>
             </h2>
             <a
-              href="https://drive.google.com/drive/folders/1QQNa7ZMMXlUby9yq9Cs2iHoofJCaO2YP?usp=sharing"
+              href="http://bit.ly/Booklet_NAO2021"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 md:ml-0 font-semibold cursor-pointer bg-palette-pink hover:bg-palette-dusty shadow-effect-nao text-sm text-white transition ease-in duration-200 text-center text-base w-6/12 shadow-lg rounded-full"
             >
-              {/* <button className="p-2 md:ml-0 font-semibold cursor-pointer bg-palette-pink hover:bg-palette-dusty shadow-effect-nao text-sm text-white transition ease-in duration-200 text-center text-base w-6/12 shadow-lg rounded-full"> */}
-                Download Booklet
-                {/* <i>Coming Soon</i> */}
-              {/* </button> */}
+              Download Booklet
             </a>
           </div>
 
@@ -114,9 +111,13 @@ const Nao = () => {
                 </p>
               </div>
             </div>
-            {/* <button className="p-2 md:ml-0 mt-2 font-semibold cursor-pointer bg-palette-pink hover:bg-palette-dusty shadow-effect-nao text-sm text-white transition ease-in duration-200 text-center text-base w-6/12 shadow-lg rounded-full">
+            <a
+              href="http://bit.ly/Registrasi_NAO2021"
+              target="_blank"
+              className="p-2 md:ml-0 mt-2 font-semibold cursor-pointer bg-palette-pink hover:bg-palette-dusty shadow-effect-nao text-sm text-white transition ease-in duration-200 text-center text-base w-6/12 shadow-lg rounded-full"
+            >
               Register
-            </button> */}
+            </a>
           </div>
 
           <div className="flex w-full flex-col items-center justify-center">
