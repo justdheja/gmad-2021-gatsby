@@ -24,6 +24,13 @@ body {
   background-repeat: no-repeat;
 }
 
+.container-contact-us {
+  background-image: url("../images/bacground_contact_us.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .orange-text-container {
   background-image: url("../images/orange_line_event.png");
   background-size: cover;
