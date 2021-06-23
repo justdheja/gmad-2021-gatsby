@@ -3,7 +3,7 @@ import Layout from "../components/Layout"
 import building from "../images/building.png"
 import Events from '../components/Events'
 import EventsMobile from '../components/EventsMobile'
-import Contacts from '../components/contact'
+import Contacts from '../components/Contact'
 import Timer from '../components/Timer'
 import { Fade } from 'react-reveal'
 import Scroll from 'react-scroll'
