@@ -2,7 +2,7 @@ import { Link } from 'gatsby'
 import React, { useEffect, useState } from 'react'
 import logoGmad from '../images/logo.png'
 
-const Navbar = ({ location }) => {
+const Navbar = ({ loading }) => {
   const [url, setUrl] = useState("")
   const [menuMobileOpen, setMenuMobileOpen] = useState(false)
 
@@ -10,7 +10,6 @@ const Navbar = ({ location }) => {
     setUrl(window.location.pathname)
     window.addEventListener("popstate", () => {
       setUrl(window.location.pathname)
-      setMenuMobileOpen(false)
     })
     return () => {
       window.addEventListener("popstate", () => {})
@@ -18,10 +17,11 @@ const Navbar = ({ location }) => {
   }, [])
 
   const handleMenuMobile = () => {
-    // if (menuMobileOpen) {
-    //   setMenuMobileOpen()
-    // }
-    setMenuMobileOpen(!menuMobileOpen)
+    if (menuMobileOpen) {
+      setMenuMobileOpen(false)
+    } else {
+      setMenuMobileOpen(true)
+    }
   }
 
   return (
@@ -87,7 +87,7 @@ const Navbar = ({ location }) => {
                     className="text-gray-800 inline-flex items-center justify-center p-2 rounded-md focus:outline-none transition duration-500"
                     onClick={handleMenuMobile}
                   >
-                    {!menuMobileOpen ? (
+                    {menuMobileOpen ? (
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         class="h-6 w-6"
@@ -126,14 +126,12 @@ const Navbar = ({ location }) => {
           <div
             className={
               menuMobileOpen
-                ? "md:hidden hidden bg-transparent transition duration-500 ease-in-out"
-                : "md:hidden bg-transparent transition duration-500 ease-in-out"
+                ? "md:hidden  bg-transparent transition duration-500 ease-in-out"
+                : "md:hidden hidden bg-transparent transition duration-500 ease-in-out"
             }
+            onClick={handleMenuMobile}
           >
-            <div
-              class="px-4 pt-2 pb-3 space-y-1 sm:px-3 bg-white"
-              onClick={handleMenuMobile}
-            >
+            <div class="px-4 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
               <Link
                 className="text-gray-700 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 activeClassName="text-gray-700 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"

@@ -17,7 +17,7 @@ const Layout = ({ children, page }) => {
     <>
       <SEO page={page} />
       <div className="flex flex-col min-h-screen static ">
-        <Navbar />
+        <Navbar loading={loading} />
         {loading && <Loader />}
         <span className={loading ? "hidden" : ""}>
         {children}
