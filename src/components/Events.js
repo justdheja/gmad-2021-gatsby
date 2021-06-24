@@ -1,6 +1,5 @@
 import React from 'react';
-import Timer from './Timer';
-import { Fade, Slide } from 'react-reveal';
+import { Fade } from 'react-reveal';
 import { Link } from 'gatsby';
 import atalk from '../images/atalk_white.png'
 import nao from '../images/nao_white.png'
