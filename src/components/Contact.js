@@ -6,8 +6,8 @@ import linkedinicon from '../images/icon_linkedin.png'
 const Contacts = () => {
   return (
     <div className="min-h-screen container-contact-us flex flex-col items-center md:justify-around p-16 space-y-8">
-      <h2 className="text-6xl text-white font-bold">Contact Us</h2>
-      <div className="flex justify-around lg:pt-12 w-full h-full">
+      <h2 className="text-6xl text-white font-bold text-center">Contact Us</h2>
+      <div className="flex flex-col md:flex-row items-center justify-around lg:pt-12 w-full h-full">
         <a
           href="https://www.instagram.com/gmad.ugm/"
           target="_blank"
