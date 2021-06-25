@@ -42,7 +42,7 @@ const TimelineNao = () => {
               <br />
               Preliminary
             </h4>
-            <p className="text-white">August 21th, 2021</p>
+            <p className="text-white">August 21st, 2021</p>
           </div>
         </li>
         <li class="li complete">
