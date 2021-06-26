@@ -80,6 +80,12 @@ body {
   background-position: bottom;
 }
 
+.container-submission-jnc {
+  background-image: url("../images/background-submission-jnc.png");
+  background-size: cover;
+  background-position: top;
+}
+
 .title-effect-nao {
   text-shadow: 0px 0px 15px #d61656;
 }

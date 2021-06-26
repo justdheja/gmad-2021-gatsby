@@ -111,6 +111,41 @@ const Jnc = () => {
           </div>
         </Fade>
       </div>
+      <div className="min-h-screen container-submission-jnc p-4 lg:px-12 flex items-center">
+        <Fade bottom>
+          <div className="flex flex-col space-y-20 w-full lg:w-8/12">
+            <div className="text-left w-full">
+              <h1 className="text-2xl lg:text-5xl text-white font-semibold text-theme-jnc mb-4 tracking-wider">
+                Registration &<br />
+                Abstract Submission
+              </h1>
+              <a
+                href="http://bit.ly/Registration_JNC2021"
+                target="_blank"
+                className="p-2 lg:px-4 mx-auto cursor-pointer bg-palette-blue hover:bg-palette-teal text-white transition ease-in duration-200 text-center w-full lg:w-4/12  shadow-md rounded-full italic lg:uppercase"
+                rel="noopener noreferrer"
+              >
+                Register & Submit Abstract
+              </a>
+            </div>
+            <div className="lg:text-right w-full">
+              <h1 className="text-2xl lg:text-5xl text-white font-semibold text-theme-jnc mb-4 tracking-wider">
+                Booklet &<br />
+                Guideline
+              </h1>
+              <a
+                href="http://bit.ly/JNCBooklet2021"
+                target="_blank"
+                className="p-2 lg:px-4 mx-auto cursor-pointer bg-palette-blue hover:bg-palette-teal text-white transition ease-in duration-200 text-center w-full lg:w-4/12 space-x-12 text-base shadow-md rounded-full italic lg:uppercase"
+                rel="noopener noreferrer"
+              >
+                Download Booklet & Guideline
+              </a>
+            </div>
+          </div>
+        </Fade>
+        <div className="w-4/12 hidden lg:block"></div>
+      </div>
     </Layout>
   )
 }
