@@ -80,6 +80,18 @@ body {
   background-position: bottom;
 }
 
+.container-submission-jnc {
+  background-image: url("../images/background-submission-jnc.png");
+  background-size: cover;
+  background-position: top;
+}
+
+.gradient-submission-jnc {
+  background-image: url("../images/gradient-submission-jnc.png");
+  background-size: cover;
+  background-position: bottom;
+}
+
 .title-effect-nao {
   text-shadow: 0px 0px 15px #d61656;
 }
