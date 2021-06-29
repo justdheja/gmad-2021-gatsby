@@ -90,6 +90,10 @@ body {
   text-shadow: 0px 0px 15px #d61656;
 }
 
+.icon-white-filter {
+  filter: brightness(50);
+}
+
 .shadow-effect-nao {
   -webkit-box-shadow: 10px 10px 21px -8px rgba(0,0,0,1);
   -moz-box-shadow: 10px 10px 21px -8px rgba(0,0,0,1);
