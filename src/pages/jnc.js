@@ -3,6 +3,8 @@ import { Fade } from 'react-reveal'
 import Layout from '../components/Layout'
 import jncLogo from '../images/logoJncEvent.png'
 import timelineJnc from '../images/timelineJnc.png'
+import iconRegister from '../images/icon_register_jnc.png'
+import iconBooklet from '../images/icon_booklet_jnc.png'
 
 const Jnc = () => {
   return (
@@ -114,33 +116,52 @@ const Jnc = () => {
       <div className="min-h-screen container-submission-jnc p-4 lg:px-12 flex items-center">
         <Fade bottom>
           <div className="flex flex-col space-y-20 w-full lg:w-8/12">
-            <div className="text-left w-full">
-              <h1 className="text-2xl lg:text-5xl text-white font-semibold text-theme-jnc mb-4 tracking-wider">
-                Registration &<br />
-                Abstract Submission
-              </h1>
-              <a
-                href="http://bit.ly/Registration_JNC2021"
-                target="_blank"
-                className="p-2 lg:px-4 mx-auto cursor-pointer bg-palette-blue hover:bg-palette-teal text-white transition ease-in duration-200 text-center w-full lg:w-4/12  shadow-md rounded-full italic lg:uppercase"
-                rel="noopener noreferrer"
-              >
-                Register & Submit Abstract
-              </a>
+            <div className="text-left w-full lg:flex">
+              <img
+                src={iconRegister}
+                alt="icon register"
+                className="icon-white-filter"
+              />
+              <div>
+                <h1 className="text-2xl lg:text-5xl text-white font-semibold text-theme-jnc mb-4 tracking-wider">
+                  Registration &<br />
+                  Abstract Submission
+                </h1>
+                <a
+                  href="http://bit.ly/Registration_JNC2021"
+                  target="_blank"
+                  className="p-2 lg:px-4 mx-auto cursor-pointer bg-palette-blue hover:bg-palette-teal text-white transition ease-in duration-200 text-center w-full lg:w-4/12  shadow-md rounded-full italic lg:uppercase"
+                  rel="noopener noreferrer"
+                >
+                  Register & Submit Abstract
+                </a>
+              </div>
             </div>
-            <div className="lg:text-right w-full">
-              <h1 className="text-2xl lg:text-5xl text-white font-semibold text-theme-jnc mb-4 tracking-wider">
-                Booklet &<br />
-                Guideline
-              </h1>
-              <a
-                href="http://bit.ly/JNCBooklet2021"
-                target="_blank"
-                className="p-2 lg:px-4 mx-auto cursor-pointer bg-palette-blue hover:bg-palette-teal text-white transition ease-in duration-200 text-center w-full lg:w-4/12 space-x-12 text-base shadow-md rounded-full italic lg:uppercase"
-                rel="noopener noreferrer"
-              >
-                Download Booklet & Guideline
-              </a>
+            <div className="lg:text-right w-full lg:flex justify-end">
+              <div>
+                <img
+                  src={iconBooklet}
+                  alt="icon register"
+                  className="icon-white-filter lg:hidden"
+                />
+                <h1 className="text-2xl lg:text-5xl text-white font-semibold text-theme-jnc mb-4 tracking-wider">
+                  Booklet &<br className="hidden lg:block" />
+                  {" "}Guideline
+                </h1>
+                <a
+                  href="http://bit.ly/JNCBooklet2021"
+                  target="_blank"
+                  className="p-2 lg:px-4 mx-auto cursor-pointer bg-palette-blue hover:bg-palette-teal text-white transition ease-in duration-200 text-center w-full lg:w-4/12 space-x-12 text-base shadow-md rounded-full italic lg:uppercase"
+                  rel="noopener noreferrer"
+                >
+                  Download Booklet & Guideline
+                </a>
+              </div>
+              <img
+                src={iconBooklet}
+                alt="icon register"
+                className="icon-white-filter ml-4 hidden lg:block"
+              />
             </div>
           </div>
         </Fade>
