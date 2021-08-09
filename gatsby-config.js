@@ -31,5 +31,11 @@ module.exports = {
         postCssPlugins: [require("tailwindcss"), require("autoprefixer")],
       },
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ["G-LWRDRZ2MYK"],
+      },
+    },
   ],
 }
