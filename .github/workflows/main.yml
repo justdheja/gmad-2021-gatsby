@@ -1,20 +1,19 @@
-name: Lighthouse Check
-
+name: Run Lighthouse CI
 on: [pull_request]
 
 jobs:
   lhci:
-    name: Run Lighthouse CI
+    name: Lighthouse CI
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
-
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v1
+      
+      - name: Use Node.js 10.x
+        uses: actions/setup-node@v1
         with:
           node-version: "14"
 
-      - name: Wait for the Netlify Web Preview
+      - name: Wait for Netlify Web Preview
         uses: jakepartusch/wait-for-netlify-action@v1
         id: netlify
         with:
@@ -24,13 +23,11 @@ jobs:
       - name: Preview URL
         run: echo ${{ steps.netlify.outputs.url }}
 
-      - name: Running Lighthouse CI
-        id: lhci
-        shell: bash
+      - name: Run Lighthouse
         run: |
-          npm i -g @lhci/cli@0.8.x
-          lhci collect --url=${{ steps.netlify.outputs.url }} --url=${{ steps.netlify.outputs.url }}/jnc --url=${{ steps.netlify.outputs.url }}/nao --url=${{ steps.netlify.outputs.url }}/a-talk
+          yarn global add @lhci/cli@0.8.x
+          lhci collect --url=${{ steps.netlify.outputs.url }} --url=${{ steps.netlify.outputs.url }}/contents --url=${{ steps.netlify.outputs.url }}/about
           lhci upload --target "temporary-public-storage" --githubAppToken "$LHCI_GITHUB_APP_TOKEN" --githubToken "$GITHUB_TOKEN"
-        env:
+        env: 
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
