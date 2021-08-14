@@ -12,6 +12,7 @@ body {
 @font-face {
   font-family: housttleySignature;
   src: url("./HousttelySignature.ttf");
+  font-display: swap;
 }
 
 .title-timer {
