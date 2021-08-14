@@ -21,16 +21,15 @@ jobs:
           site_name: "gmadugm"
           max_timeout: 120
 
+      - name: Preview URL
+        run: echo ${{ steps.netlify.outputs.url }}
+
       - name: Running Lighthouse CI
         id: lhci
         shell: bash
         run: |
           npm i -g @lhci/cli@0.8.x
-          echo -e "\n"
-          echo "Start collecting LH report..."
           lhci collect --url=${{ steps.netlify.outputs.url }} --url=${{ steps.netlify.outputs.url }}/jnc --url=${{ steps.netlify.outputs.url }}/nao --url=${{ steps.netlify.outputs.url }}/a-talk
-          echo -e "\n"
-          echo "Start uploading the report..."
           lhci upload --target "temporary-public-storage" --githubAppToken "$LHCI_GITHUB_APP_TOKEN" --githubToken "$GITHUB_TOKEN"
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
