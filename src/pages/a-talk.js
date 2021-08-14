@@ -1,10 +1,9 @@
 import React from "react"
 import Layout from "../components/Layout"
-import { Fade } from 'react-reveal'
-import atalkLogo from '../images/logoAtalkEvent.png'
+import { Fade } from "react-reveal"
+import atalkLogo from "../images/logoAtalkEvent.png"
 
 const Atalk = () => {
-
   return (
     <Layout page="Accounting Talk">
       <div className="min-h-screen container-desc-atalk p-16 flex flex-col space-y-24 items-center justify-center">
@@ -27,6 +26,48 @@ const Atalk = () => {
             they can educate people and have a positive impact on society at
             large.
           </p>
+        </Fade>
+      </div>
+      <div className="min-h-screen container-theme-atalk p-8 lg:p-16">
+        <Fade bottom>
+          <h2 className="title-timer text-white text-center text-4xl">
+            Grand Theme
+          </h2>
+          <div className="flex m-auto my-12 justify-center space-x-2">
+            <span className="font-bold font-orange text-6xl">"</span>
+            <h4 className="text-3xl text-white font-bold text-center pt-2 title-effect-atalk">
+              Companies vs Crises:
+              <br /> A Call for Rapid Responsible Transformation
+            </h4>
+            <span className="font-bold font-orange text-6xl">"</span>
+          </div>
+          <h2 className="title-timer text-white text-center text-4xl mb-10">
+            Subtheme
+          </h2>
+          <div className="lg:flex justify-center lg:space-x-4">
+            <div className="text-center lg:w-4/12">
+              <div className="p-2 bg-palette-orange font-bold text-white shadow-effect-nao uppercase inline-block mb-2">
+                Webinar
+              </div>
+              <div className="font-bold text-2xl text-white">
+                <span className="font-yellow-atalk">Accounting's Role:</span>
+                <br />
+                Providing Relevant and Timely Information for Corporate Investment
+              </div>
+            </div>
+            <div className="text-center mt-4 lg:mt-0 lg:w-4/12">
+              <div className="p-2 bg-palette-orange font-bold text-white shadow-effect-nao uppercase inline-block mb-2">
+                Talkshow
+              </div>
+              <div className="font-bold text-2xl text-white">
+                <span className="font-yellow-atalk">
+                  Small Business Survival:
+                </span>
+                <br />
+                Maximizing Financial Growth From Accounting Perspective
+              </div>
+            </div>
+          </div>
         </Fade>
       </div>
     </Layout>

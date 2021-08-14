@@ -91,6 +91,10 @@ body {
   text-shadow: 0px 0px 15px #d61656;
 }
 
+.title-effect-atalk {
+  text-shadow: 0px 0px 5px #f37121;
+}
+
 .icon-white-filter {
   filter: brightness(50);
 }
@@ -99,7 +103,6 @@ body {
   -webkit-box-shadow: 10px 10px 21px -8px rgba(0,0,0,1);
   -moz-box-shadow: 10px 10px 21px -8px rgba(0,0,0,1);
   box-shadow: 10px 10px 21px -8px rgba(0,0,0,1), inset 5px 5px 5px 0px rgba(255,255,255,0.2);
-
 }
 
 .text-theme-jnc {
@@ -132,6 +135,12 @@ body {
   background-position: center;
 }
 
+.container-theme-atalk {
+  background-image: url("../images/backgroundThemeAtalk.webp");
+  background-size: cover;
+  background-position: center;
+}
+
 .bg-palette-teal {
   background-color: #3d50a0;
 }
@@ -142,6 +151,14 @@ body {
 
 .bg-palette-orange {
   background-color: #f37121;
+}
+
+.font-orange {
+  color: #f37121;
+}
+
+.font-yellow-atalk {
+  color: #F9BC6B;
 }
 
 .timer-number {

@@ -114,6 +114,7 @@ const Nao = () => {
             <a
               href="http://bit.ly/Registrasi_NAO2021"
               target="_blank"
+              rel="noopener noreferrer"
               className="p-2 md:ml-0 mt-2 font-semibold cursor-pointer bg-palette-pink hover:bg-palette-dusty shadow-effect-nao text-sm text-white transition ease-in duration-200 text-center text-base w-6/12 shadow-lg rounded-full"
             >
               Register
