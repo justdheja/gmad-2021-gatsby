@@ -19,6 +19,7 @@ jobs:
         id: netlify
         with:
           site_name: "gmadugm"
+          max_timeout: 120
 
       - name: Running Lighthouse CI
         id: lhci
