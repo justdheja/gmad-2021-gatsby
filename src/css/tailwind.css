@@ -12,6 +12,7 @@ body {
 @font-face {
   font-family: housttleySignature;
   src: url("./HousttelySignature.ttf");
+  font-display: swap;
 }
 
 .title-timer {
@@ -19,7 +20,7 @@ body {
 }
 
 .container-event {
-  background-image: url("../images/bacground_event.png");
+  background-image: url("../images/backgroundEvent.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -75,13 +76,13 @@ body {
 }
 
 .container-event-nao {
-  background-image: url("../images/bacgroundEventNao.png");
+  background-image: url("../images/backgroundEventNao.webp");
   background-size: cover;
   background-position: bottom;
 }
 
 .container-submission-jnc {
-  background-image: url("../images/background-submission-jnc.png");
+  background-image: url("../images/backgroundSubmissionJnc.webp");
   background-size: cover;
   background-position: top;
 }
