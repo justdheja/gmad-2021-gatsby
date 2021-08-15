@@ -72,7 +72,7 @@ const Atalk = () => {
           </div>
         </Fade>
       </div>
-      <div className="min-h-screen container-register-atalk p-8 flex flex-col lg:flex-row items-center text-center">
+      <div className="min-h-screen container-register-atalk p-8 flex flex-col lg:flex-row justify-center items-center text-center">
         <div className="w-6/12 hidden lg:block"></div>
         <div className="h-full lg:w-6/12 flex flex-col justify-center items-center">
           <img src={atalkWhite} alt="logo atalk white" className=" w-44" />
