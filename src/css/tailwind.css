@@ -141,6 +141,12 @@ body {
   background-position: center;
 }
 
+.container-register-atalk {
+  background-image: url("../images/backgroundRegisterAtalk.webp");
+  background-size: cover;
+  background-position: center;
+}
+
 .bg-palette-teal {
   background-color: #3d50a0;
 }

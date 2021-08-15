@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import { Fade } from "react-reveal"
 import atalkLogo from "../images/logoAtalkEvent.png"
+import atalkWhite from '../images/atalk_white.webp'
 
 const Atalk = () => {
   return (
@@ -52,7 +53,8 @@ const Atalk = () => {
               <div className="font-bold text-2xl text-white">
                 <span className="font-yellow-atalk">Accounting's Role:</span>
                 <br />
-                Providing Relevant and Timely Information for Corporate Investment
+                Providing Relevant and Timely Information for Corporate
+                Investment
               </div>
             </div>
             <div className="text-center mt-4 lg:mt-0 lg:w-4/12">
@@ -69,6 +71,28 @@ const Atalk = () => {
             </div>
           </div>
         </Fade>
+      </div>
+      <div className="min-h-screen container-register-atalk p-8 flex flex-col lg:flex-row items-center text-center">
+        <div className="w-6/12 hidden lg:block"></div>
+        <div className="h-full lg:w-6/12 flex flex-col justify-center items-center">
+          <img src={atalkWhite} alt="logo atalk white" className=" w-44" />
+          <div className="text-center">
+            <p className="text-white font-bold text-4xl">21 September 2021</p>
+            <div className="flex flex-col">
+              <div className="p-2 py-0 bg-palette-orange font-bold text-white shadow-effect-nao text-center uppercase content inline-block mb-2 text-3xl mb-6">
+                Registration
+              </div>
+              <a
+                href="http://bit.ly/ATalkRegistration"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-palette-teal text-white font-bold py-1 px-4 rounded-full text-xl lg:text-3xl content"
+              >
+                bit.ly/ATalkRegistration
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </Layout>
   )
