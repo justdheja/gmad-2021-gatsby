@@ -77,19 +77,26 @@ const Atalk = () => {
         <div className="h-full lg:w-6/12 flex flex-col justify-center items-center">
           <img src={atalkWhite} alt="logo atalk white" className=" w-44" />
           <div className="text-center">
-            <p className="text-white font-bold text-4xl">21 September 2021</p>
+            <p className="text-white font-bold text-4xl text-shadow-orange">
+              5 September 2021
+            </p>
             <div className="flex flex-col">
-              <div className="p-2 py-0 bg-palette-orange font-bold text-white shadow-effect-nao text-center uppercase content inline-block mb-2 text-3xl mb-6">
-                Registration
-              </div>
               <a
+                href="http://bit.ly/ATalkRegistration"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 py-0 bg-palette-orange font-bold text-white shadow-effect-nao text-center uppercase content inline-block mb-2 text-3xl my-6 rounded-full"
+              >
+                Register
+              </a>
+              {/* <a
                 href="http://bit.ly/ATalkRegistration"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-palette-teal text-white font-bold py-1 px-4 rounded-full text-xl lg:text-3xl content"
               >
                 bit.ly/ATalkRegistration
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
