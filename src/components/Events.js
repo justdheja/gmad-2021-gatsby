@@ -1,12 +1,12 @@
 import React from 'react';
 import { Fade } from 'react-reveal';
 import { Link } from 'gatsby';
-import atalk from '../images/atalk_white.png'
+import atalk from '../images/atalk_white.webp'
 import nao from '../images/nao_white.png'
 import jnc from '../images/jnc_white.png'
 import fotoAtalk from '../images/fotoAtalk.png'
 import fotoNao from '../images/fotoNao.png'
-import fotoJnc from '../images/fotoJnc.png'
+import fotoJnc from '../images/fotoJnc.webp'
 
 function Events() {
 	
