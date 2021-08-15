@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Fade } from 'react-reveal';
-import atalkWhite from '../images/atalk_white.png';
+import atalkWhite from '../images/atalk_white.webp';
 
 function Timer({ expiryTimestamp }) {
   const [days, setDays] = useState(0)
