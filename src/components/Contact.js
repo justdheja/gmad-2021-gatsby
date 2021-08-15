@@ -1,5 +1,5 @@
 import React from "react"
-import igicon from '../images/icon_instagram.png'
+import igicon from '../images/icon_instagram.webp'
 import lineicon from '../images/icon_line.png'
 import linkedinicon from '../images/icon_linkedin.png'
 

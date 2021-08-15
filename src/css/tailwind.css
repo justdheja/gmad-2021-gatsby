@@ -58,13 +58,13 @@ body {
 }
 
 .container-theme-slide1-jnc {
-  background-image: url("../images/backgroundThemeSlide1Jnc.png");
+  background-image: url("../images/backgroundThemeSlide1Jnc.webp");
   background-size: cover;
   background-position: center;
 }
 
 .container-theme-slide2-jnc {
-  background-image: url("../images/backgroundThemeSlide2Jnc.png");
+  background-image: url("../images/backgroundThemeSlide2Jnc.webp");
   background-size: cover;
   background-position: center;
 }

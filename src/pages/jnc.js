@@ -2,7 +2,7 @@ import React from 'react'
 import { Fade } from 'react-reveal'
 import Layout from '../components/Layout'
 import jncLogo from '../images/logoJncEvent.png'
-import timelineJnc from '../images/timelineJnc.png'
+import timelineJnc from '../images/timelineJnc.webp'
 import iconRegister from '../images/icon_register_jnc.png'
 import iconBooklet from '../images/icon_booklet_jnc.png'
 
