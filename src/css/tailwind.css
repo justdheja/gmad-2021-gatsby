@@ -109,6 +109,10 @@ body {
   text-shadow: 0px 5px 5px #000;
 }
 
+.text-shadow-orange {
+  text-shadow: 3px 2px 0px #f37121;
+}
+
 .bg-palette-pink {
   background: #d61656;
 }
