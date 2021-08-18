@@ -14,6 +14,7 @@ const SEO = ({ page }) => {
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
       <title>{page ? (title + " | " + page) : title}</title>
+      <script data-ad-client="ca-pub-3498584576110631" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     </Helmet>
   )
 }
