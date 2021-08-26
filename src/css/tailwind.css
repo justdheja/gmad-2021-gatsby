@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins&display=swap");
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
 
@@ -100,9 +100,10 @@ body {
 }
 
 .shadow-effect-nao {
-  -webkit-box-shadow: 10px 10px 21px -8px rgba(0,0,0,1);
-  -moz-box-shadow: 10px 10px 21px -8px rgba(0,0,0,1);
-  box-shadow: 10px 10px 21px -8px rgba(0,0,0,1), inset 5px 5px 5px 0px rgba(255,255,255,0.2);
+  -webkit-box-shadow: 10px 10px 21px -8px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 10px 10px 21px -8px rgba(0, 0, 0, 1);
+  box-shadow: 10px 10px 21px -8px rgba(0, 0, 0, 1),
+    inset 5px 5px 5px 0px rgba(255, 255, 255, 0.2);
 }
 
 .text-theme-jnc {
@@ -111,6 +112,10 @@ body {
 
 .text-shadow-orange {
   text-shadow: 3px 2px 0px #f37121;
+}
+
+.text-shadow-teal {
+  text-shadow: 4px 4px 0px #3d50a0;
 }
 
 .bg-palette-pink {
@@ -168,12 +173,20 @@ body {
 }
 
 .font-yellow-atalk {
-  color: #F9BC6B;
+  color: #f9bc6b;
 }
 
 .timer-number {
   font-size: 8rem;
   line-height: 8rem;
+}
+
+.atalk-speaker-border {
+  border-bottom: dashed 4px #3d50a0;
+}
+
+.atalk-webinar-border {
+  border-right: dotted 4px #3d50a0;
 }
 
 .bg-timer-red {
@@ -212,13 +225,19 @@ body {
   background-position: center;
 }
 
+.bg-slide-atalk {
+  background: url("../images/background_slide_atalk.webp");
+  background-size: cover;
+  background-position: center;
+}
+
 .header-horizontal {
-	border: 2px solid #fff;
-	width: 9rem;
+  border: 2px solid #fff;
+  width: 9rem;
 }
 
 .poppins {
-	font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 /* TImelineNao */
 .timeline {
@@ -245,7 +264,7 @@ body {
   padding: 0px 20px;
   /* display: flex; */
   justify-content: center;
-  border-top: 2px solid #D6DCE0;
+  border-top: 2px solid #d6dce0;
   position: relative;
   transition: all 200ms ease-in;
 }
@@ -298,5 +317,9 @@ body {
     left: -8%;
     top: 30%;
     transition: all 200ms ease-in;
+  }
+
+  .atalk-webinar-border {
+    border-top: dotted 4px #3d50a0;
   }
 }

@@ -3,6 +3,7 @@ import Layout from "../components/Layout"
 import { Fade } from "react-reveal"
 import atalkLogo from "../images/logoAtalkEvent.png"
 import atalkWhite from '../images/atalk_white.webp'
+import AtalkSlide from '../components/AtalkSlide'
 
 const Atalk = () => {
   return (
@@ -71,6 +72,9 @@ const Atalk = () => {
             </div>
           </div>
         </Fade>
+      </div>
+      <div className="min-h-screen bg-slide-atalk p-10">
+        <AtalkSlide />
       </div>
       <div className="min-h-screen container-register-atalk p-8 flex flex-col lg:flex-row justify-center items-center text-center">
         <div className="w-6/12 hidden lg:block"></div>
