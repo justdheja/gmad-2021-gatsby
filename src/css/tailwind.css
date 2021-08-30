@@ -322,4 +322,8 @@ body {
   .atalk-webinar-border {
     border-top: dotted 4px #3d50a0;
   }
+
+  .text-shadow-orange {
+    text-shadow: 0px 0px 0px #f37121;
+  }
 }

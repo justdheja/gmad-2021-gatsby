@@ -6,6 +6,7 @@ import EventsMobile from '../components/EventsMobile'
 import Contacts from '../components/Contact'
 import Timer from '../components/Timer'
 import { Fade } from 'react-reveal'
+import sponsors from "../images/sponsors.webp"
 import Scroll from 'react-scroll'
 const ScrollLink = Scroll.Link
 const Element = Scroll.Element
@@ -93,6 +94,10 @@ export default () => {
       </Element>
       <Timer />
       <Contacts />
+      <div className="bg-white p-8">
+        <div className="lg:text-5xl text-center uppercase text-palette-blue text-shadow-orange font-bold">Sponsor & Media Partner</div>
+        <img src={sponsors} alt="sponsor media partner" />
+      </div>
     </Layout>
   )
 }
